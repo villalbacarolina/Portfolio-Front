@@ -1,0 +1,48 @@
+.about {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    background-position: 0 100%;
+  }
+  100% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+}
+
+.text {
+  display: flex;
+  max-width: 80%; /* Para limitar el ancho máximo y hacerlo responsive */
+  margin-right: 5%; /* Espacio desde el borde derecho en dispositivos grandes */
+  animation: textFadeIn 3s linear forwards;
+}
+
+p {
+  margin: 0;
+  color: #B66655;
+  background: linear-gradient(350deg, transparent 0%, #B66655 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-weight: normal;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin: 0;
+  color: #B66655; 
+  background-image: -webkit-linear-gradient(45deg, #B66655 19%, #472922 94%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
