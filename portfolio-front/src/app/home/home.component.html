@@ -1,1 +1,30 @@
-<p>home works!</p>
+<div class="home">
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  
+  <div class="hola">
+    <h1>Carolina Villalba</h1>
+    <div class="text">
+      <a href="#" class="menu-link"><p>About me</p></a>
+      <a href="#" class="menu-link"><p>Education</p></a>
+      <a href="#" class="menu-link"><p>Experience</p></a>
+      <a href="#" class="menu-link"><p>Projects</p></a>
+      <a href="#" class="menu-link"><p>Skills</p></a>
+      <a href="#" class="menu-link"><p>Contact</p></a>
+    </div>
+  </div>
+  
+  <script>
+  $(document).ready(function() {
+    $(".menu-link").on("click", function(e) {
+      e.preventDefault();
+      $(".menu-link, h1").addClass("clicked");
+      setTimeout(function() {
+        window.location = e.target.getAttribute("href");
+      }, 500); // Después de 500ms, redirige al enlace
+    });
+  });
+  </script>
+
+</div>
