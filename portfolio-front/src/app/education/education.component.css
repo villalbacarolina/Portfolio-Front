@@ -1,0 +1,91 @@
+.education {
+  height: 100vh;
+  margin-left: 5%;
+}
+
+h2 {
+    font-weight: normal;
+  color: #B66655;
+  background-image: -webkit-linear-gradient(45deg, #B66655 19%, #532e26 94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation-duration: 5s;
+  animation-name: slidein;
+  margin: 0px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 500%;
+  }
+}
+
+p {
+  margin-right: 1%;
+  margin-top: 0px;
+}
+
+h3 {
+    font-weight: normal;
+
+  margin: 0px;
+  color: #B66655;
+  background-image: -webkit-linear-gradient(45deg, #B66655 19%, #532e26 94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hi {
+  display: flex;
+}
+
+/* Nueva regla de animación para "Education" */
+h2 {
+  animation: fadeIn 3s ease-in-out, textFadeIn 3s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-left: 100%;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0%;
+  }
+}
+
+/* Evita que otros elementos tengan animaciones */
+.education, .hi, p, h3 {
+  animation: textFadeIn 3s linear forwards;
+  color: #B66655;
+  background-image: -webkit-linear-gradient(45deg, #B66655 19%, #532e26 94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    background-position: 0 100%;
+  }
+  50% {
+    opacity: 0.5;
+    background-position: 0 0;
+  }
+  100% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+}
