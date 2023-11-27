@@ -1,0 +1,46 @@
+.centered-line {
+    width: 1px;
+    height: 1px;
+    background-color: #B66655;
+    margin: 0 auto;
+    animation: growLine 5s forwards, textFadeIn 3s linear forwards;
+}
+
+@keyframes growLine {
+    0% {
+        width: 1px; /* Ancho inicial */
+    }
+    100% {
+        width: 90%; /* Ancho original */
+    }
+}
+
+body {
+  background-color: #000;
+  color: #B66655;
+}
+
+h2 {
+  text-align: center;
+  animation: textFadeIn 3s linear forwards;
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    background-position: 0 100%;
+  }
+  100% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+}
+
+p, h3,h4{
+  font-weight: normal;
+  margin: 0px;
+  animation: textFadeIn 6s linear forwards;
+}
+.experience{
+  padding:5%;
+}
