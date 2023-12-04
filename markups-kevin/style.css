@@ -62,10 +62,6 @@ a:focus {
 	text-decoration: none;
 }
 
-.mu-about-title{
-	writing-mode: vertical-lr;
-  	transform: rotate(180deg);
-}
 
 h1,
 h2,
@@ -415,8 +411,15 @@ button:focus {
 /* ABOUT US */
 /*--------------------*/
 
-.text{
+.mu-about-text{
 	display: flex;
+	text-align: left;
+}
+.mu-about-title{
+	font-weight: normal;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	text-align: right;
 }
 
 #mu-about {
@@ -448,7 +451,6 @@ button:focus {
 }
 
 .mu-about-content {
-	background-color: #fff;
 	display: inline;
 	float: left;
 	margin-top: 70px;
