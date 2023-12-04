@@ -636,55 +636,69 @@ button:focus {
 /* PORTFOLIO */
 /*--------------------*/
 
+@keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%;
+	}
+	to {
+	  margin-left: 0%;
+	  width: 500%;
+	}
+  }
 
-#mu-portfolio {
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	  margin-left: 100%;
+	}
+	100% {
+	  opacity: 1;
+	  margin-left: 0%;
+	}
+  }
+
+#mu-education {
 	background-color: #f8f8f8;
 	display: inline;
 	float: left;
 	width: 100%;
+	height: 100vh;
 }
 
-.mu-portfolio-area {
+.mu-education-area {
 	display: inline;
 	float: left;
 	padding: 100px 0;
 	width: 100%;
 }
 
-.mu-portfolio-header {
+.ed-text{
+	margin:5%;
+}
+
+.mu-education-header {
 	display: inline;
 	float: left;
-	text-align: center;
 	width: 100%;
 }
 
-.mu-heading-title {
+.mu-education-title {
 	color: #1c1b1b;
-	margin-bottom: 15px;
-	position: relative;
+	margin-bottom: 5%;
+	animation-duration: 5s;
+	animation-name: slidein;
+	animation: fadeIn 3s ease-in-out, textFadeIn 3s linear forwards;
 }
 
-.mu-header-dot {
-	border-radius: 0;
-	height: 3px;
-	width: 75px;
-	display: inline-block;
-	margin-bottom: 20px;
-}
 
-.mu-portfolio-content{
+
+.mu-education-content{
 	display: inline;
 	float: left;
 	margin-top: 30px;
-	width: 100%;
 }
 
-.mu-portfolio-filter-area{
-	display: inline;
-	float: left;
-	width: 100%;
-	margin-top: 30px;
-}
 
 .filtr-item {
 	margin-bottom: 0px;
@@ -724,14 +738,7 @@ button:focus {
 	transition: all 0.5s;
 }
 
-.filtr-item:hover .mu-item-thumbonail img {
-	-webkit-transform: scale(1.1);
-	        transform: scale(1.1);
-}
 
-.filtr-item:hover .mu-filter-item-content{
-	opacity: 0.94;
-}
 
 .mu-filter-link,
 .mu-filter-imglink {
@@ -1376,7 +1383,7 @@ button:focus {
 		font-size: 12px;
 	}
 
-	.mu-portfolio-content .col-xs-6 {
+	.mu-education-content .col-xs-6 {
 		width: 100%;
 	}
 
