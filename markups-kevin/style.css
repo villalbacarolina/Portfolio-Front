@@ -658,6 +658,14 @@ button:focus {
 	animation: fadeIn 3s ease-in-out, textFadeIn 3s linear forwards;
 }
 
+.ed-info{
+	display: flex;
+}
+
+.ed-info p{
+	margin-right: 3%;
+}
+
 /*--------------------*/
 /* CLIENT TESTIMONIALS */
 /*--------------------*/
