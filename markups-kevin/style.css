@@ -13,7 +13,7 @@ Version: 1.0
 #HEADER	
 #MENU 
 #FEATURED SLIDER 
-#ABOUT US
+#ABOUT ME
 #SERVICE 
 #PORTFOLIO
 #TESTIMONIAL
@@ -416,7 +416,6 @@ button:focus {
 	text-align: left;
 }
 .mu-about-title{
-	font-weight: normal;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);
 	text-align: right;
@@ -570,70 +569,38 @@ button:focus {
 	width: 100%;
 }
 
-.mu-technologies-area {
-	display: inline;
-	float: left;
-	padding: 100px 0;
-	width: 100%;
+
+
+.mu-technologies-area{
+	width: 100vw;
+	height: 100vh;
+	padding: 7%;
 }
 
-.mu-technologies-header {
-	display: inline;
-	float: left;
+.technologies{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	padding: 5%;
+}
+
+.technology{
+	padding: 2%;
+    width: 20%;
+	height: 20%;
 	text-align: center;
-	padding: 0 120px;
-	width: 100%;
 }
 
-.mu-heading-title {
-	color: #1c1b1b;
-	margin-bottom: 15px;
-	position: relative;
+.svg{
+	width: 50%;
+	margin: auto;
+	margin-bottom: 5%;
 }
 
-.mu-technologies-content{
-	display: inline;
-	float: left;
-	margin-top: 70px;
-	width: 100%;
-}
-
-.mu-technologies-content-single {
-	background-color: #f8f8f8;
-	display: inline;
-	float: left;
-	text-align: center;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding: 25px 10px;
-	width: 100%;
-}
-
-.mu-technologies-icon-box {
-	font-size: 30px;
-	margin-bottom: 20px;
-	display: inline-block;
-	border-radius: 50%;
-	width: 75px;
-	height: 75px;
-	line-height: 75px;
-}
-
-.mu-technologies-content-single h4{
-	margin-bottom: 20px;
-	font-size: 20px;
-}
-
-.mu-technologies-content-single p {
-	font-size: 14px;
-	margin-bottom: 0;
-	color: #555;
-	letter-spacing: 0.5px;
-}
 
 
 /*--------------------*/
-/* PORTFOLIO */
+/* EDUCATION */
 /*--------------------*/
 
 @keyframes slidein {
@@ -662,19 +629,19 @@ button:focus {
 	background-color: #f8f8f8;
 	display: inline;
 	float: left;
-	width: 100%;
-	height: 100vh;
+	padding: 7%;
 }
 
 .mu-education-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
 	width: 100%;
 }
 
-.ed-text{
-	margin:5%;
+.ed-text, h5{
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-bottom: 7%;
 }
 
 .mu-education-header {
@@ -690,107 +657,6 @@ button:focus {
 	animation-name: slidein;
 	animation: fadeIn 3s ease-in-out, textFadeIn 3s linear forwards;
 }
-
-
-
-.mu-education-content{
-	display: inline;
-	float: left;
-	margin-top: 30px;
-}
-
-
-.filtr-item {
-	margin-bottom: 0px;
-	padding: 16px;
-}
-
-.filtr-item h4 {
-	font-size: 18px;
-	letter-spacing: 1px;
-}
-
-.mu-filter-item-content {
-	position: absolute;
-	left: 16px;
-	top: 16px;
-	right: 16px;
-	bottom: 16px;
-	color: #fff;
-	padding-top: 25%;
-	text-align: center;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	opacity: 0;
-}
-
-.mu-item-thumbonail{
-	display: inline;
-	float: left;
-	overflow: hidden;
-	width: 100%;
-}
-
-.mu-item-thumbonail img{
-	-webkit-transform: scale(1);
-	        transform: scale(1);
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-}
-
-
-
-.mu-filter-link,
-.mu-filter-imglink {
-	border-radius: 50%;
-    background: #1b1c29;
-    color: #fff;
-    height: 35px;
-    padding: 0 6px;
-    width: 35px;
-    line-height: 35px;
-    display: inline-block;
-    font-size: 15px;
-    margin-right: 10px;
-    margin-top: 5px;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-	
-}
-
-.mu-filter-link:hover,
-.mu-filter-imglink:hover,
-.mu-filter-link:focus,
-.mu-filter-imglink:focus {
-	background-color: #fff;
-} 
-
-
-/* Filter controls */
-
-.mu-simplefilter {
-	text-align: center;
-}
-
-.mu-simplefilter li {
-	color: #555;
-	cursor: pointer;
-	display: inline-block;
-	padding: 5px;
-	margin: 0 5px;
-	-webkit-transition: all 0.5s;
-	transition: all 0.5s;
-	font-size: 16px;
-	font-weight: 600;
-	letter-spacing: 1px;
-}
-
-.mu-simplefilter li:hover,
-.mu-simplefilter li.active {
-    border-color: #fff;
-}
-
 
 /*--------------------*/
 /* CLIENT TESTIMONIALS */
@@ -1404,3 +1270,35 @@ button:focus {
 	
 }
 
+.centered-line {
+    width: 1px;
+    height: 1px;
+    background-color: #B66655;
+    margin: 0 auto;
+    animation: growLine 5s forwards, textFadeIn 3s linear forwards;
+}
+
+@keyframes growLine {
+    0% {
+        width: 1px; /* Ancho inicial */
+    }
+    100% {
+        width: 90%; /* Ancho original */
+    }
+}
+
+.mu-technologies-title {
+  text-align: center;
+  animation: textFadeIn 3s linear forwards;
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    background-position: 0 100%;
+  }
+  100% {
+    opacity: 1;
+    background-position: 0 0;
+  }
+}
