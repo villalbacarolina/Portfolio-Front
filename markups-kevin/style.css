@@ -115,12 +115,14 @@ h2{
 	animation: fade 9.5s ease;
 }
 
-.featured-title {
+h1 {
 	animation: fade 4s ease;
-	position: absolute;
+}
+.text{
 	bottom: 5%;
 	left: 5%;
 	padding: 10vh;
+	text-align: start;
 }
 
 
@@ -406,19 +408,11 @@ button:focus {
 	width: 100%;
 }
 
-.mu-featured-slider p,
-#typed {
+.mu-featured-slider p
+{
 	color: #fff;
 	font-size: 30px;
 	font-weight: 300;
-}
-
-.mu-featured-slider span,
-#typed span,
-.typed-cursor {
-	color: #fff;
-	font-size: 30px;
-	font-weight: 600;
 }
 
 .mu-featured-content {
@@ -819,6 +813,106 @@ button:focus {
 
 .mu-skills-slide .slick-dots li button::before {
 	display: none;
+}
+
+/*--------------------*/
+/* PROJECT US */
+/*--------------------*/
+
+#mu-project {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-project-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
+
+.mu-project-header {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100%;
+	padding: 0 120px;
+}
+
+.mu-project-content{
+	display: inline;
+	float: left;
+	margin-top: 50px;
+	padding: 0 120px;
+	width: 100%;
+}
+
+.mu-project-top {
+	display: inline;
+	float: left;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.mu-project-top-single {
+	display: inline;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.mu-project-top-single .mu-icon {
+	font-size: 25px;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.mu-project-top-single p{
+	margin-bottom: 0;
+}
+
+
+.mu-project-bottom {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.mu-social-media {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.success {
+	padding: 1em;
+	margin-bottom: 0.75rem;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	color: #468847;
+	background-color: #dff0d8;
+	border: 1px solid #d6e9c6;
+	-webkit-border-radius: 4px;
+	 -moz-border-radius: 4px;
+	      border-radius: 4px;
+}
+
+.error {
+	padding: 1em;
+	margin-bottom: 0.75rem;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	color: #b94a48;
+	background-color: #f2dede;
+	border: 1px solid rgba(185, 74, 72, 0.3);
+	-webkit-border-radius: 4px;
+	 -moz-border-radius: 4px;
+	      border-radius: 4px;
 }
 
 
@@ -1233,8 +1327,7 @@ button:focus {
 	}
 
 	.mu-featured-slider p, 
-	#typed,
-	#typed span {
+	{
 		font-size: 18px;
 	}
 
