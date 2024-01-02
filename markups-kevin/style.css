@@ -583,7 +583,7 @@ button:focus {
 
 
 /*--------------------*/
-/* SERVICE */
+/* technologies */
 /*--------------------*/
 
 
@@ -597,6 +597,8 @@ button:focus {
 
 .mu-technologies-area{
 	padding: 7%;
+	background-color: #000000;
+	color: #B66655;
 }
 
 .technologies{
@@ -689,7 +691,7 @@ button:focus {
 }
 
 /*--------------------*/
-/* CLIENT TESTIMONIALS */
+/* skills */
 /*--------------------*/
 
 #mu-skills {
@@ -916,21 +918,42 @@ button:focus {
 
 
 /*--------------------*/
-/* CONTACT US */
+/* CONTACT*/
 /*--------------------*/
 
 #mu-contact {
-	background-color: #fff;
+	color: #B66655;
+	background-color: #000000;
 	display: inline;
 	float: left;
 	width: 100%;
 }
 
+a {
+	color: #B66655;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #eb917d; /* Nuevo color al hacer hover */
+}
+
+.contact, .repo, .ubication{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 .mu-contact-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 10% 0;
 	width: 100%;
+	border: #B66655 1px solid;
+	margin-top: 4%;
+	margin-bottom: 3%;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 
 .mu-contact-header {
@@ -942,139 +965,11 @@ button:focus {
 }
 
 .mu-contact-content{
-	display: inline;
-	float: left;
-	margin-top: 50px;
+	display: flex;
+	justify-content: center;
 	padding: 0 120px;
 	width: 100%;
 }
-
-.mu-contact-top {
-	display: inline;
-	float: left;
-	width: 100%;
-	margin-bottom: 40px;
-}
-
-.mu-contact-top-single {
-	display: inline;
-	float: left;
-	text-align: center;
-	width: 100%;
-}
-
-.mu-contact-top-single .mu-icon {
-	font-size: 25px;
-	display: inline-block;
-	width: 70px;
-	height: 70px;
-	line-height: 70px;
-	border-radius: 50%;
-	margin-bottom: 15px;
-	color: #fff;
-}
-
-.mu-contact-top-single p{
-	margin-bottom: 0;
-}
-
-
-.mu-contact-bottom {
-	display: inline;
-	float: left;
-	width: 100%;
-}
-
-.mu-contact-form {
-	text-align: center;
-}
-
-.mu-contact-form .form-group input {
-	background: transparent;
-	border-radius: 4px;
-	color: #333;
-	font-size: 15px;
-	border: 1px solid #888;
-	height: 45px;
-	margin-bottom: 24px;
-}
-
-.mu-contact-form .form-group textarea {
-	background: transparent;
-	border: 1px solid #888;
-	border-radius: 4px;
-	color: #333;
-	font-size: 18px;
-	padding: 10px;
-	height: 190px;
-}
-
-.mu-contact-form .form-control:focus {
-	background-color: #fff;
-    outline: 0;
-    box-shadow: none;    
-} ©
-
-.mu-contact-form .form-control::-webkit-input-placeholder {
-	color: #888;
-	font-size: 15px;
-}
-
-.mu-contact-form .form-control:-moz-placeholder { /* Firefox 18- */
-	color: #888;
-	font-size: 15px; 
-}
-
-.mu-contact-form .form-control::-moz-placeholder {  /* Firefox 19+ */
-	color: #888;
-	font-size: 15px;
-}
-
-.mu-contact-form .form-control:-ms-input-placeholder {  
-	color: #888;
-	font-size: 15px;
-}
-
-.mu-contact-form .button-default::after,
-.mu-contact-form .button-default > span {
-	padding: 12px 40px;  
-}
-
-.mu-social-media {
-	display: inline;
-	float: left;
-	width: 100%;
-}
-
-#form-messages {
-	margin-bottom: 10px;
-    background-color: #fff;
-}
-
-.success {
-	padding: 1em;
-	margin-bottom: 0.75rem;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	color: #468847;
-	background-color: #dff0d8;
-	border: 1px solid #d6e9c6;
-	-webkit-border-radius: 4px;
-	 -moz-border-radius: 4px;
-	      border-radius: 4px;
-}
-
-.error {
-	padding: 1em;
-	margin-bottom: 0.75rem;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-	color: #b94a48;
-	background-color: #f2dede;
-	border: 1px solid rgba(185, 74, 72, 0.3);
-	-webkit-border-radius: 4px;
-	 -moz-border-radius: 4px;
-	      border-radius: 4px;
-}
-
 
 
 /*--------------------*/
@@ -1083,7 +978,7 @@ button:focus {
 
 
 #mu-footer {
-	background-color: #f8f8f8;
+	background-color: #B66655;
 	display: inline;
 	float: left;
 	width: 100%;
